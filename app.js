@@ -51,5 +51,6 @@ app.get('*', (req,res) => {
 })
 
 //start server & make public
-app.listen(3000)
+const port = process.env.PORT || 3000
+app.listen(port)
 module.exports = app
