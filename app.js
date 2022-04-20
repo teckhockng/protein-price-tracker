@@ -50,8 +50,7 @@ app.get('*', (req,res) => {
   res.sendFile(__dirname + '/public/index.html')
 })
 
-//start server & make public
-//const port = process.env.PORT || 3000
-//app.listen(port)
-app.listen(3000)
+// start server & make public
+const port = process.env.PORT || 3000
+app.listen(port)
 module.exports = app
